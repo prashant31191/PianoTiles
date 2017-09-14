@@ -232,7 +232,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:background="#5b30"
+        android:background="@color/colorPrimary"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:text="Score : "
