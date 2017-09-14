@@ -30,8 +30,9 @@
         android:padding="10dp"
         android:layout_height="60dp">
 
+        <!--结束-->
         <Button
-            android:text="结束"
+            android:text="End"
             android:id="@+id/dialog_btn_finish"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -39,11 +40,12 @@
             android:layout_marginRight="5dp"
             android:layout_height="match_parent" />
 
+        <!--Again 重来-->
         <Button
             android:id="@+id/dialog_btn_restart"
             android:layout_marginLeft="5dp"
             android:background="@drawable/alert_score"
-            android:text="重来"
+            android:text="Again"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />

@@ -1,5 +1,6 @@
 package com.czp.pianotiles;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
@@ -21,6 +22,7 @@ import java.util.concurrent.TimeUnit;
  * Created by caizepeng on 17/1/11.
  */
 
+@SuppressLint("AppCompatCustomView")
 public class CountDownView extends TextView {
     private final static int DURATION = 1000;
     private List<String> mData;

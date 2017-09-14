@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mPianoTilesView = (PianoTilesView) findViewById(R.id.pianoTilesView);
         mCountDownView = (CountDownView) findViewById(R.id.countTextView);
         mMarkRela = (RelativeLayout) findViewById(R.id.markRela);
-        mCountDownView.setData(Arrays.asList("3","2","1","开始"));
+        mCountDownView.setData(Arrays.asList("3","2","1","Start"));//开始
         mCountDownView.init();
         mCountDownView.setCountDownListener(new CountDownView.CountDownListener() {
             @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 .setFinishClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Log.e("DEMO","点击点击");
+                        Log.e("DEMO","Click to click");//点击点击
                         finish();
                         mAlertScoreDialog.dismiss();
                     }
