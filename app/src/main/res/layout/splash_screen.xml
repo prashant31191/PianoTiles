@@ -23,11 +23,22 @@
             android:layout_height="wrap_content"
             android:text="Play Game"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
             android:layout_margin="15dp"
             android:textSize="16dp"
             />
+        <Button
+            android:id="@+id/btnMini"
 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini Piano"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="15dp"
+            android:textSize="16dp"
+            />
     </RelativeLayout>
 
 

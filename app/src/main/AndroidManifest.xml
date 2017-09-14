@@ -14,7 +14,11 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         >
-        <!--<activity android:namActGameTilevity">-->
+        <!--
+
+
+
+        <activity android:namActGameTilevity">-->
         <activity android:name=".ActSplash"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -37,6 +41,12 @@
             />
         <activity android:name="com.piano.WebviewActivity"
             android:screenOrientation="portrait"/>
+
+
+ <activity android:name="com.game.ActSPianoGame"
+            android:screenOrientation="portrait"
+     android:theme="@style/AppTheme.NoActionBar"
+     />
 
 
 
