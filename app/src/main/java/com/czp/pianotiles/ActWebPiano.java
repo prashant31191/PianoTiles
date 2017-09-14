@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
  * Created by prashant.patel on 9/14/2017.
  */
 
-public class ActViewWeb extends Activity {
+public class ActWebPiano extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

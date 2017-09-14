@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.piano.ActPlayPiano;
+
 /**
  * Created by prashant.patel on 9/14/2017.
  */
@@ -31,16 +33,28 @@ public class ActSplash extends Activity
             public void onClick(View v) {
                 isGame = true;
 
-                startActivity(new Intent(ActSplash.this, MainActivity.class));
+                startActivity(new Intent(ActSplash.this, ActGameTile.class));
                 finish();
             }
         });
+
+        /*Button btnPlayPiano = (Button)findViewById(R.id.btnPlayPiano);
+        btnPlayPiano.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isGame = true;
+
+                startActivity(new Intent(ActSplash.this, ActPlayPiano.class));
+                finish();
+            }
+        });*/
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 if(isGame == false) {
-                    startActivity(new Intent(ActSplash.this, ActViewWeb.class));
+                    //startActivity(new Intent(ActSplash.this, ActWebPiano.class));
+                    startActivity(new Intent(ActSplash.this, ActPlayPiano.class));
                     finish();
                 }
             }

@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity {
+public class ActGameTile extends AppCompatActivity {
     private CountDownView mCountDownView;
     private PianoTilesView mPianoTilesView;
     private RelativeLayout mMarkRela;
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.act_game);
         initView();
     }
     private void initView() {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mAlertScoreDialog = new AlertScoreDialog.Builder(MainActivity.this)
+        mAlertScoreDialog = new AlertScoreDialog.Builder(ActGameTile.this)
                 .setFinishClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
